@@ -58,7 +58,7 @@ const displayUsers = () => {
   allPosts.innerHTML = null;
   arrayOfPosts.map((post, index) => {
     const li = document.createElement('li')
-    const text = document.createTextNode(post.userId)
+    const text = document.createTextNode(`User ID#: ${post.userId}`)
     li.appendChild(text)
     allPosts.append(li)
   })
